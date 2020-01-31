@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout1"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_weight="29"
+
+    tools:context=".ui.main.BookOrderTab">|
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="0dp"
+            android:paddingTop="10dp"
+            android:inputType="numberDecimal"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Enter $$$ for alert"
+
+            ></EditText>
+
+        <Button
+            android:id="@+id/setAlert"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:shadowColor="@android:color/holo_red_light"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ripple"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:elevation="25dp"
+            android:layout_marginTop="3dp"
+
+            android:text="set"></Button>
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="20"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bidRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            tools:listitem="@layout/bid_ask_table" />
+
+    </HorizontalScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/buy"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:shadowColor="@android:color/holo_red_light"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ripple2"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:elevation="25dp"
+            android:layout_marginTop="3dp"
+
+            android:text="Buy"></Button>
+
+        <Button
+            android:id="@+id/sell"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:shadowColor="@android:color/holo_red_light"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="58dp"
+
+            android:background="@drawable/ripple"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:elevation="25dp"
+            android:layout_marginTop="3dp"
+
+            android:text="Sell"></Button>
+    </LinearLayout>
+
+
+
+    <Button
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content"
+        android:shadowColor="@android:color/holo_red_light"
+        android:elevation="25dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:background="@drawable/ripple"
+        android:layout_width="match_parent"
+        android:id="@+id/refresh"
+        android:layout_weight="1"
+
+        android:text="refresh"
+        ></Button>
+
+
+</LinearLayout>

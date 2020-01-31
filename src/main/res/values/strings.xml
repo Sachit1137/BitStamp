@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BitStamp</string>
+    <string name="tab_text_1">Transactions</string>
+    <string name="tab_text_2">Order Book</string>
+</resources>

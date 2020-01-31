@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="4"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/bid_amount"
+        android:layout_width="60dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="bid_amt"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/bid_price"
+        android:layout_width="70dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="bid_price"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/ask_price"
+        android:layout_width="70dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="ask_price"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/ask_amount"
+        android:layout_width="60dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="ask_amount"
+        android:textSize="12sp" />
+
+
+</LinearLayout>
